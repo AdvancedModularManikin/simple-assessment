@@ -1,5 +1,5 @@
 
-#MoHSES Simple Assessment Module
+# MoHSES Simple Assessment Module
 
 This is a module built to evaluate simple assessment checklists, both sequential and non-sequential.
 
@@ -25,7 +25,7 @@ An assessment list can be created as shown below:
 </AssessmentList>
 ```
 
-This is included in the capability configuration section of the MoHSES Scenario File format.
+This is included in the capability configuration section of the [MoHSES Scenario File format](https://github.com/AdvancedModularManikin/specification/blob/master/scenario_file_specification.md).
 
 For each event record of a specific type that comes in a MoHSES Assessment will be generated, indicating one of the following:
 
