@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilitiesSchema xmlns="urn:AdvancedModularManikin"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:AdvancedModularManikin schema/CapabilitiesSchema.xsd">
+   <Capability type="simple_assessment">
+      <Subscriptions>
+         <EventRecord/>
+         <RenderModification/>
+         <PhysiologyModification/>
+      </Subscriptions>
+      <Publications>
+         <Assessment/>
+      </Publications>
+   </Capability>
+   <Configuration>
+      <Capability type="assessment">
+         <configuration_data>
+            <data name="assessment_list" type="custom"></data>
+         </configuration_data>
+      </Capability>
+   </Configuration>
+</CapabilitiesSchema>
