@@ -280,8 +280,8 @@ void on_module_configuration(AMM::ModuleConfiguration &mc, SampleInfo_t *info) {
 void publish_operational_description() {
     LOG_INFO << "Publishing operational description.";
     AMM::OperationalDescription od;
-    od.name("AJAMS Assessment Module");
-    od.model("AJAMS Assessment Module");
+    od.name("Simple Assessment Module");
+    od.model("Simple Assessment Module");
     od.manufacturer("Vcom3D");
     od.serial_number("1.0.0");
     od.module_id(module_id);
@@ -296,7 +296,7 @@ int main() {
     static plog::ColorConsoleAppender <plog::TxtFormatter> consoleAppender;
     plog::init(plog::verbose, &consoleAppender);
 
-    LOG_INFO << "AJAMS Assessment Module";
+    LOG_INFO << "Simple Assessment Module";
 
     mgr = new AMM::DDSManager<void>("config/simple_assessment_amm.xml");
     module_id.id(mgr->GenerateUuidString());
@@ -328,7 +328,7 @@ int main() {
     };
 
     std::thread t(loop);
-    LOG_INFO << "AJAMS Assessment Module running... Press return to exit.";
+    LOG_INFO << "Simple Assessment Module running... Press return to exit.";
     std::cin.get();
     isRunning = false;
     t.join();
