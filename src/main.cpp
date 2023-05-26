@@ -272,7 +272,8 @@ void on_command(AMM::Command &command, SampleInfo_t *info) {
 void on_module_configuration(AMM::ModuleConfiguration &mc, SampleInfo_t *info) {
     if (mc.name() == "simple_assessment") {
         LOG_TRACE << "Module config received, MC name is " << mc.name();
-        parse_xml(mc.capabilities_configuration());
+        std::string capabilities = mc.capabilities_configuration().to_string();
+        parse_xml(capabilities);
     }
 }
 
