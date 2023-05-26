@@ -53,6 +53,7 @@ if (MSVC)
 else ()
     add_compile_options(-std=c++14)
     add_compile_options(-O0)
+    add_compile_options(-Wno-psabi)
 endif ()
 
 find_package(amm_std REQUIRED)
